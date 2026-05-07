@@ -12,12 +12,21 @@
 
 ## 快速开始
 
+### 1. 注册账号
+访问服务地址：https://limit-francisco-charitable-sur.trycloudflare.com
+点击「免费注册」，1 分钟完成注册。
+
+### 2. 生成 API Key
+登录后进入 Token 管理页面，创建一个新的 API Key。
+
+### 3. 调用
+
 ```python
 from openai import OpenAI
 
 client = OpenAI(
     api_key="sk-你的key",
-    base_url="https://your-url/v1"
+    base_url="https://limit-francisco-charitable-sur.trycloudflare.com/v1"
 )
 
 response = client.chat.completions.create(
