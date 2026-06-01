@@ -1,59 +1,84 @@
-# 🦞 DeepChannel — DeepSeek API 中转
+# DeepChannel — Access DeepSeek V4 Without China Phone Number
 
-> 个人技术实验项目 | 赞助制 | 全球可用
+> **Full Suite · 22 Plans · Automated Email Delivery · No SMS Verification**
 
-## ⚠️ 重要声明
+[![Stars](https://img.shields.io/github/stars/Trent2630/trent-ai-api?style=social)](https://github.com/Trent2630/trent-ai-api)
 
-- 深渠（DeepChannel）是由个人运营的非企业化技术实验项目
-- 你的付款是**自愿赞助/捐赠**，API 密钥是附赠礼遇
-- 使用即代表你已同意全部法律文件
-- **所有赞助不可退款**
+---
 
-## 📜 法律文件（使用前必读）
+## 🚀 What is DeepChannel?
 
-| 文件 | 说明 |
-|------|------|
-| [TERMS-OF-SERVICE.md](TERMS-OF-SERVICE.md) | 主协议（含国际仲裁、GDPR、上游断供等条款） |
-| [PRICING-AND-PLANS.md](PRICING-AND-PLANS.md) | 套餐定价方案 |
+Tired of needing a **Chinese phone number** just to access the best AI models? 
 
-## 🚀 快速开始
+DeepChannel gives you instant access to **DeepSeek V4 Flash & Pro** — no SMS, no China verification, no hassle.
 
-### 1. 选择套餐
-查看 [PRICING-AND-PLANS.md](PRICING-AND-PLANS.md)，V4 Flash 11档（$0.69起）/ V4 Pro 11档（$0.49起）。
+| | Official DeepSeek | DeepChannel |
+|------|:--:|:--:|
+| China phone required | ✅ Required | ❌ Not needed |
+| PayPal payment | ❌ WeChat/Alipay only | ✅ PayPal |
+| Key delivery | Manual | ✅ Auto email in 5 min |
+| Entry price | ~$5 top-up | **From $0.69** |
 
-### 2. 赞助支付
-通过 Wise 支付至指定账户，备注格式：
+---
+
+## 💰 Pricing (DeepSeek V4 Flash)
+
+| Plan | Price | Tokens | Best For |
+|------|------|------|------|
+| 🎁 Starter | $0.69 | 700K | Try it out |
+| ⭐ Standard | $3.99 | 4.2M | Regular use |
+| 🔥 Pro | $9.99 | 18M | Heavy users |
+| 💎 Premium | $39.98 | 60M | Teams & production |
+
+→ [Full 22-tier pricing](https://github.com/Trent2630/trent-ai-api) — plans from $0.49 to $199.98
+
+---
+
+## ⚡ How It Works
+
 ```
-你的邮箱@gmail.com | Agree ToS
+1. Pick a plan → 2. Pay via PayPal → 3. Get your key in 5 minutes via email
 ```
 
-### 3. 收取 Key
-48 小时内发送 API 密钥至你的邮箱。
+**That's it.** No phone. No SMS. No waiting.
 
-### 4. 调用
+---
+
+## 🛠 Quick Start
 
 ```python
-from openai import OpenAI
+import openai
 
-client = OpenAI(
-    api_key="sk-你的key",
-    base_url="https://你的隧道地址/v1"
+client = openai.OpenAI(
+    api_key="sk-xxxxxxxxxxxxxxxx",  # Your DeepChannel key
+    base_url="https://api.deepseek.com/v1"
 )
 
 response = client.chat.completions.create(
-    model="deepseek-chat",
-    messages=[{"role": "user", "content": "你好"}]
+    model="deepseek-v4-flash",
+    messages=[{"role": "user", "content": "Hello!"}]
 )
 ```
 
-## 📊 模型
+---
 
-| 模型 | 定位 | 每百万售价 |
-|------|------|:--:|
-| DeepSeek V4 Flash | 量大管饱，日常高频 | $0.9583 |
-| DeepSeek V4 Pro | 旗舰性能，复杂推理 | $2.682 |
+## 🔒 Why Trust Us?
 
-## 🔗 相关
+- **PayPal buyer protection** covers every transaction
+- **GitHub open source** — inspect our delivery infrastructure
+- **No data logging** — your prompts are never stored
+- **163.com professional email** for support
 
-- 基于 [One API](https://github.com/songquanpeng/one-api) 搭建
-- 上游模型：[DeepSeek](https://api-docs.deepseek.com)
+---
+
+## 📬 Contact & Order
+
+- **Email**: trent026303@163.com
+- **GitHub Issues**: [Open an issue](https://github.com/Trent2630/trent-ai-api/issues)
+- **WeChat**: available for Chinese-speaking customers
+
+> 📦 **Ready to start?** Browse [our plans](https://github.com/Trent2630/trent-ai-api) and place your order via email.
+
+---
+
+*DeepChannel is an independent API relay service. DeepSeek is a trademark of DeepSeek Inc.*
